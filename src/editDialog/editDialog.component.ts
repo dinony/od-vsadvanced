@@ -26,7 +26,7 @@ import {
 } from './editCmd';
 
 @Component({
-  selector: 'od-virtual-scroll-editDialog',
+  selector: 'od-virtualscroll-editDialog',
   styles: [`
     .form-control {
       margin-right: 10px;

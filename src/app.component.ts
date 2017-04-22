@@ -83,7 +83,7 @@ import {SettingsDialogComponent} from './settingsDialog/settingsDialog.component
     }
   `],
   template: `
-    <od-virtual-scroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsEqualsFunc]="equals">
+    <od-virtualscroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsEqualsFunc]="equals">
       <ng-template let-item let-row="row" let-column="column">
         <div class="tile">
           <div class="tile-info">
@@ -93,13 +93,13 @@ import {SettingsDialogComponent} from './settingsDialog/settingsDialog.component
           {{item}}
         </div>
       </ng-template>
-    </od-virtual-scroll>
+    </od-virtualscroll>
 
     <div class="header" *ngIf="numItems === 0">
       <h1>od-virtualscroll</h1>
     </div>
 
-    <od-virtual-scroll-debug *ngIf="showDebug"></od-virtual-scroll-debug>
+    <od-virtualscroll-debug *ngIf="showDebug"></od-virtualscroll-debug>
 
     <button class="settings-btn" type="button" md-fab (click)="openSettings()">
       <md-icon>settings</md-icon>

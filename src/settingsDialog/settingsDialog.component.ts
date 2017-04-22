@@ -23,7 +23,7 @@ import {ISettings} from './settings';
 import {SettingsObservableService} from './settings.service';
 
 @Component({
-  selector: 'od-virtual-scroll-settingsDialog',
+  selector: 'od-virtualscroll-settingsDialog',
   styles: [`
     .form-control {
       margin-right: 10px;
@@ -51,7 +51,7 @@ import {SettingsObservableService} from './settings.service';
     <md-dialog-content>
       <form [formGroup]="vsForm" novalidate>
         <section formGroupName="basic">
-          <h4>Basic ISettings</h4>
+          <h4>Basic Settings</h4>
           <md-input-container [dividerColor]="isFieldInvalid('basic.numItems') ? 'warn' : 'primary'" class="form-control">
             <input type="number" mdInput placeholder="Number of items" formControlName="numItems">
             <md-hint class="form-error" *ngIf="isFieldInvalid('basic.numItems')" align="end">Invalid</md-hint>
