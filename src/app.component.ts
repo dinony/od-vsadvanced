@@ -30,58 +30,7 @@ import {SettingsDialogComponent} from './settingsDialog/settingsDialog.component
 
 @Component({
   selector: 'app-shell',
-  styles: [`
-    :host {
-      display: block;
-      height: 100vh;
-    }
-
-    .tiles-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .tile {
-      align-items: center;
-      border: 2px black solid;
-      box-sizing: border-box;
-      display: inline-flex;
-      height: 200px;
-      justify-content: center;
-      margin-right: -2px;
-      position: relative;
-      width: 200px;
-    }
-
-    .tile-info {
-      font-size: 10px;
-      position: absolute;
-      right: 5px;
-      text-align: right;
-      top: 5px;
-    }
-
-    .settings-btn {
-      bottom: 90px;
-      position: fixed;
-      right: 30px;
-    }
-
-    .cmd-btn {
-      bottom: 30px;
-      position: fixed;
-      right: 38px;
-    }
-
-    .header {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 50px;
-      width: 100%;
-    }
-  `],
+  styleUrls: ['src/app.component.css'],
   template: `
     <od-virtualscroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsEqualsFunc]="equals">
       <ng-template let-item let-row="row" let-column="column">

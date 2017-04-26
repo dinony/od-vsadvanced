@@ -27,29 +27,7 @@ import {
 
 @Component({
   selector: 'od-virtualscroll-editDialog',
-  styles: [`
-    .form-control {
-      margin-right: 10px;
-      width: 120px;
-    }
-
-    span[md-suffix] {
-      font-size: 9px;
-    }
-
-    .update-btn {
-      margin-right: 4px;
-    }
-
-    .form-error {
-      color: red;
-    }
-
-    .checkbox-group {
-      display: flex;
-      justify-content: space-between;
-    }
-  `],
+  styleUrls: ['src/editDialog/editDialog.component.css'],
   template: `
     <md-dialog-content>
       <form [formGroup]="editForm" novalidate>

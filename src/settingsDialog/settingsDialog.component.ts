@@ -24,29 +24,7 @@ import {SettingsObservableService} from './settings.service';
 
 @Component({
   selector: 'od-virtualscroll-settingsDialog',
-  styles: [`
-    .form-control {
-      margin-right: 10px;
-      width: 120px;
-    }
-
-    span[md-suffix] {
-      font-size: 9px;
-    }
-
-    .update-btn {
-      margin-right: 4px;
-    }
-
-    .form-error {
-      color: red;
-    }
-
-    .checkbox-group {
-      display: flex;
-      justify-content: space-between;
-    }
-  `],
+  styleUrls: ['src/settingsDialog/settingsDialog.component.css'],
   template: `
     <md-dialog-content>
       <form [formGroup]="vsForm" novalidate>
