@@ -34,8 +34,8 @@ import {SettingsDialogComponent} from './settingsDialog/settingsDialog.component
   template: `
     <od-virtualscroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsEqualsFunc]="equals">
       <ng-template let-item let-row="row" let-column="column">
-        <div class="tile">
-          <div class="tile-info">
+        <div class="cell">
+          <div class="cell-info">
             <span>Row: {{row}}</span><br>
             <span>Column: {{column}}</span>
           </div>
