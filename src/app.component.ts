@@ -32,7 +32,7 @@ import {SettingsDialogComponent} from './settingsDialog/settingsDialog.component
   selector: 'app-shell',
   styleUrls: ['src/app.component.css'],
   template: `
-    <od-virtualscroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsEqualsFunc]="equals">
+    <od-virtualscroll class="cells-container" [vsData]="data$" [vsOptions]="options$" [vsEqualsFunc]="equals">
       <ng-template let-item let-row="row" let-column="column">
         <div class="cell">
           <div class="cell-info">

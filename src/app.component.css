@@ -3,12 +3,12 @@
   height: 100vh;
 }
 
-.tiles-container {
+.cells-container {
   display: flex;
   justify-content: center;
 }
 
-.tile {
+.cell {
   align-items: center;
   border: 2px black solid;
   box-sizing: border-box;
@@ -20,7 +20,7 @@
   width: 200px;
 }
 
-.tile-info {
+.cell-info {
   font-size: 10px;
   position: absolute;
   right: 5px;
