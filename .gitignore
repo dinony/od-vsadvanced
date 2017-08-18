@@ -7,3 +7,4 @@ src/**/*.js
 tmpPrefix
 tmpBuild
 .vscode
+npm-debug.log
