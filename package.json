@@ -68,5 +68,5 @@
     "typescript": "~2.3.3",
     "uglify-js-harmony": "^2.7.5"
   },
-  "version": "1.0.7"
+  "version": "1.0.8"
 }
